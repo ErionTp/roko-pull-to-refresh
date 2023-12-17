@@ -12,8 +12,8 @@ import {
   type PanGestureHandlerGestureEvent,
 } from 'react-native-gesture-handler';
 import type { NativeSyntheticEvent } from 'react-native';
-import useMainProvider from '../features/providers';
 import Indicator from './indicator';
+import useMainProvider from '../features/hooks/useMainProvider';
 
 type Props = {};
 const PullToRefresh: React.FC<React.PropsWithChildren<Props>> = ({

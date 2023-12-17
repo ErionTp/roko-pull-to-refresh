@@ -1,14 +1,9 @@
-import React, {
-  createContext,
-  useContext,
-  useMemo,
-  type PropsWithChildren,
-} from 'react';
+import React, { createContext, useMemo, type PropsWithChildren } from 'react';
 import type { tContext } from '../types/t.context';
 import type { tApp } from '../types/t.app';
 import type { SharedValue } from 'react-native-reanimated';
 
-const MainContext = createContext<tContext>({
+export const MainContext = createContext<tContext>({
   isRefreshing: false,
   setIsRefreshing: function (_args: boolean): void {
     throw new Error('Function not implemented.');
@@ -65,7 +60,3 @@ export const MainProvider = ({
     <MainContext.Provider value={memoValue}>{children}</MainContext.Provider>
   );
 };
-
-export default function useMainProvider() {
-  return useContext(MainContext);
-}
