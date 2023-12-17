@@ -4,8 +4,8 @@ import Animated, {
   interpolate,
   useAnimatedStyle,
 } from 'react-native-reanimated';
-import useMainProvider from '../../features/providers';
 import Item from './item';
+import useMainProvider from '../../features/hooks/useMainProvider';
 
 type Props = {};
 const Indicator: React.FC<Props> = ({}) => {

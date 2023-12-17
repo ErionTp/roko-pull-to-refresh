@@ -6,7 +6,7 @@ import Animated, {
   withRepeat,
   withTiming,
 } from 'react-native-reanimated';
-import useMainProvider from '../../../features/providers';
+import useMainProvider from '../../../features/hooks/useMainProvider';
 
 type Props = { item: string; index: number };
 const Item: React.FC<Props> = ({ item, index }) => {
