@@ -54,7 +54,7 @@ const Item: React.FC<Props> = ({ item, index }) => {
 
   return (
     <Animated.View style={[styles.root, animatedStyle]}>
-      <Text style={[fontStyle, styles.label]}>{item}</Text>
+      <Text style={fontStyle}>{item}</Text>
     </Animated.View>
   );
 };
@@ -63,4 +63,4 @@ export default Item;
 
 Item.displayName = 'Item';
 
-const styles = StyleSheet.create({ root: {}, label: { fontSize: 32 } });
+const styles = StyleSheet.create({ root: {} });

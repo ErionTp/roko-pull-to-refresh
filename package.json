@@ -1,6 +1,6 @@
 {
   "name": "roko-pull-to-refresh",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "description": "A custom pull to refresh component",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -89,7 +89,7 @@
   "workspaces": [
     "example"
   ],
-  "packageManager": "yarn@4.0.2",
+  "packageManager": "yarn@3.6.4",
   "engines": {
     "node": ">= 18.0.0"
   },
