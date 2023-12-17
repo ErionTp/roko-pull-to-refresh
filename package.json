@@ -1,6 +1,6 @@
 {
   "name": "roko-pull-to-refresh",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A custom pull to refresh component",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
